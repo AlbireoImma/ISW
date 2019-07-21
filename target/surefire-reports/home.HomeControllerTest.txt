@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: home.HomeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.366 s <<< FAILURE! - in home.HomeControllerTest
+getHello(home.HomeControllerTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at home.HomeControllerTest.getHello(HomeControllerTest.java:28)
+
