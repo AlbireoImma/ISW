@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Maquinaria</title>
+
+<!-- Botstrap CSS -->
+<link href="../static/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+	<br>
+	<div class="container">
+		<form action="#" th:action="@{/save}" th:object="${maquina}"
+			method="post">
+			<div class="form-group">
+				<label for="nombre">Nombre</label> <input type="text"
+					class="form-control" id="nombre" th:field="*{nombre}" name="nombre">
+			</div>
+			<input type="hidden" th:field="*{id}" name="id" id="id">
+			<div class="form-group">
+				<label for="tipo">Tipo</label> <input type="text"
+					class="form-control" id="tipo" th:field="*{tipo}" name="tipo">
+			</div>
+			<div class="form-group">
+				<label for="ultima_mantencion">Última mantención</label> <input
+					type="date" class="form-control" id="ultima_mantencion"
+					th:field="*{ultima_mantencion}" name="ultima_mantencion">
+			</div>
+			<button type="submit" class="btn btn-success">Guardar</button>
+		</form>
+	</div>
+</body>
+</html>
